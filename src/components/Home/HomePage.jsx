@@ -2,6 +2,7 @@ import { Button, Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -16,10 +17,16 @@ const HomePage = () => {
             Lorem ipsum
             <br />
             <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aut
-            odio itaque nobis pariatur doloribus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            tempore, aliquam incidunt culpa dolore repellat mollitia voluptas
+            nobis nihil earum expedita provident cum itaque autem quae ipsa!
+            Dolorem placeat dolor architecto alias error quibusdam. Facere
+            tempora fugit fuga eveniet sit omnis maiores adipisci. Libero,
+            recusandae!
           </p>
-          <Button variant="outline-primary">Get Started &gt;&gt;</Button>
+          <Link to={{ pathname: "/contacts" }}>
+            <Button variant="outline-primary">View Contacts &gt;&gt;</Button>
+          </Link>
         </Col>
       </Row>
     </Container>
